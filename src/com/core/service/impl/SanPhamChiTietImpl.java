@@ -4,11 +4,10 @@
  */
 package com.core.service.impl;
 
-import com.core.entity.Chip;
 import com.core.model.response.SanPhamResponse;
-import com.core.repository.SanPhamChiTietRepository;
+import com.core.repository.ChiTietSanPhamRepository;
 import com.core.service.ThuocTinhService;
-import java.util.ArrayList;
+
 import java.util.List;
 
 /**
@@ -17,7 +16,7 @@ import java.util.List;
  */
 public class SanPhamChiTietImpl implements ThuocTinhService {
 
-    private SanPhamChiTietRepository repo = new SanPhamChiTietRepository();
+    private ChiTietSanPhamRepository repo = new ChiTietSanPhamRepository();
 
     @Override
     public boolean delete(int id) {

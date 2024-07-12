@@ -5,7 +5,6 @@
 package com.core.repository;
 
 import com.core.model.response.SanPhamResponse;
-import com.core.model.response.TaiKhoanResponse;
 import com.core.tool.DBConnect;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -17,7 +16,7 @@ import java.util.List;
  *
  * @author hatun
  */
-public class SanPhamChiTietRepository {
+public class ChiTietSanPhamRepository {
 
     public List<SanPhamResponse> findAll() {
         List<SanPhamResponse> list = new ArrayList<>();

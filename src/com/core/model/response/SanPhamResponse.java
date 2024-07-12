@@ -11,33 +11,40 @@ package com.core.model.response;
 public class SanPhamResponse {
 
     private int stt;
-    private String maSanPham;
     private String tenSanPham;
     private String tenHang;
-    private String serial;
-    private String imei;
-    private String tinhTrang;
-    private float giaBan;
+    private String ram;
+    private String boNho;
+    private String mauSac;
+    private int soLuong;
+    private float gia;
 
     public SanPhamResponse() {
     }
 
-    public SanPhamResponse(int stt, String maSanPham, String tenSanPham, String tenHang, String serial, String imei, String tinhTrang, float giaBan) {
+    public SanPhamResponse(int stt, String tenSanPham, String tenHang, String ram, String boNho, String mauSac, int soLuong, float gia) {
         this.stt = stt;
-        this.maSanPham = maSanPham;
         this.tenSanPham = tenSanPham;
         this.tenHang = tenHang;
-        this.serial = serial;
-        this.imei = imei;
-        this.tinhTrang = tinhTrang;
-        this.giaBan = giaBan;
+        this.ram = ram;
+        this.boNho = boNho;
+        this.mauSac = mauSac;
+        this.soLuong = soLuong;
+        this.gia = gia;
     }
-    
-    
 
     @Override
     public String toString() {
-        return "SanPhamResponse{" + "stt=" + stt + ", maSanPham=" + maSanPham + ", tenSanPham=" + tenSanPham + ", tenHang=" + tenHang + ", serial=" + serial + ", imei=" + imei + ", tinhTrang=" + tinhTrang + ", giaBan=" + giaBan + '}';
+        return "SanPhamResponse{" +
+                "stt=" + stt +
+                ", tenSanPham='" + tenSanPham + '\'' +
+                ", tenHang='" + tenHang + '\'' +
+                ", ram='" + ram + '\'' +
+                ", boNho='" + boNho + '\'' +
+                ", mauSac='" + mauSac + '\'' +
+                ", soLuong=" + soLuong +
+                ", gia=" + gia +
+                '}';
     }
 
     public int getStt() {
@@ -46,14 +53,6 @@ public class SanPhamResponse {
 
     public void setStt(int stt) {
         this.stt = stt;
-    }
-
-    public String getMaSanPham() {
-        return maSanPham;
-    }
-
-    public void setMaSanPham(String maSanPham) {
-        this.maSanPham = maSanPham;
     }
 
     public String getTenSanPham() {
@@ -72,41 +71,43 @@ public class SanPhamResponse {
         this.tenHang = tenHang;
     }
 
-    public String getSerial() {
-        return serial;
+    public String getRam() {
+        return ram;
     }
 
-    public void setSerial(String serial) {
-        this.serial = serial;
+    public void setRam(String ram) {
+        this.ram = ram;
     }
 
-    public String getImei() {
-        return imei;
+    public String getBoNho() {
+        return boNho;
     }
 
-    public void setImei(String imei) {
-        this.imei = imei;
+    public void setBoNho(String boNho) {
+        this.boNho = boNho;
     }
 
-    public String getTinhTrang() {
-        return tinhTrang;
+    public String getMauSac() {
+        return mauSac;
     }
 
-    public void setTinhTrang(String tinhTrang) {
-        this.tinhTrang = tinhTrang;
+    public void setMauSac(String mauSac) {
+        this.mauSac = mauSac;
     }
 
-    public float getGiaBan() {
-        return giaBan;
+    public int getSoLuong() {
+        return soLuong;
     }
 
-    public void setGiaBan(float giaBan) {
-        this.giaBan = giaBan;
+    public void setSoLuong(int soLuong) {
+        this.soLuong = soLuong;
     }
 
-    public Object[] towRowTable() {
-        return new Object[]{
-            stt, maSanPham, tenSanPham, tenHang, serial, imei, tinhTrang, giaBan
-        };
+    public float getGia() {
+        return gia;
+    }
+
+    public void setGia(float gia) {
+        this.gia = gia;
     }
 }
