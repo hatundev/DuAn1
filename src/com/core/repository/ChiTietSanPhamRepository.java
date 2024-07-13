@@ -46,7 +46,7 @@ public class ChiTietSanPhamRepository {
             while (rs.next()) {
                 SanPhamResponse sp = new SanPhamResponse();
                 sp.setStt(rs.getInt("index"));
-                sp.setMaSanPham(rs.getString("masanphamchitiet"));
+                sp.set(rs.getString("masanphamchitiet"));
                 sp.setTenSanPham(rs.getString("tensanpham"));
                 sp.setTenHang(rs.getString("tenhang"));
                 sp.setSerial(rs.getString("serial"));
